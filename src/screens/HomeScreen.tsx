@@ -6,7 +6,6 @@ import  { useEffect, useState } from "react";
 
 export const HomeScreen = () => {
   const [Data, setData] = useState();
-  const [rowClick, setRowClick] = useState(true);
   const [page, setPage] = useState(1);
   const [loadin, setLoading] = useState(false);
 
