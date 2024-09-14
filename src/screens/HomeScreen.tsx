@@ -1,26 +1,17 @@
 import axios from "axios";
-import { Button } from "primereact/button";
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
-import { InputSwitch } from "primereact/inputswitch";
 import { Paginator } from "primereact/paginator";
-import React, { useEffect, useState } from "react";
-interface Datas {
-  id: number;
-}
+import  { useEffect, useState } from "react";
 
 export const HomeScreen = () => {
-  // const [Data,setData]= useState<Datas[]>([]);
   const [Data, setData] = useState();
   const [rowClick, setRowClick] = useState(true);
   const [page, setPage] = useState(1);
   const [loadin, setLoading] = useState(false);
 
   
-//   const handlePagination=(e)=> {
-//     setPage(e.first);
-//     console.log(page);
-//   }
+
   useEffect(() => {
     async function load() {
       setLoading(true);
