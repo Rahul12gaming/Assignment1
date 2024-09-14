@@ -31,13 +31,13 @@ export const HomeScreen = () => {
   return (
     <>
       <div className="mt-10 w-10/12 m-auto p-10 shadow-xl border border-slate-300 rounded-xl">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 w-full">
           <h1 className="text-xl font-medium">DataView Table!</h1>
         </div>
 
         {loadin ? (
           <>
-            <div className="flex justify-center">
+            <div className="flex justify-center w-full">
               <span className="loader"></span>
             </div>
           </>
